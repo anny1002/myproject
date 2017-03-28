@@ -4,7 +4,7 @@ public class CarTester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Car c1 = new Car("TOYOTA", 1800, "Altis", "sedan");
 		// c1.brand="toyota";
 		// c1.cc=1800;
@@ -24,16 +24,16 @@ public class CarTester {
 		cars[0] = new Car("TOYOTA", 1800, "Altis", "sedan");
 		cars[1] = new Car("HONDA", 2000, "ACCORD", "");
 		cars[2] = new Car("TOYOTA", 2000, "WISH", "");
-		cars[0].id=300;
-		cars[1].id=400;
-		cars[2].id=500;
+		cars[0].id = 300;
+		cars[1].id = 400;
+		cars[2].id = 500;
 		System.out.println(cars[0].name);
-		int i=0;
-		//要先設i,不然出了迴圈i就不在了
-		for (i=0;i<3;i++){
+		int i = 0;
+		// 要先設i,不然出了迴圈i就不在了
+		for (i = 0; i < 3; i++) {
 			System.out.println(cars[i].name);
 		}
 		System.out.println(i);
 	}
-
+	// n活在整個main方法裡，會問生存區域
 }
