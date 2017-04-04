@@ -19,6 +19,8 @@ public class Invoice {
 		System.out.println(a.get(3));
 		Scanner scanner = new Scanner(System.in);
 		String x = scanner.nextLine();
+		int correct=Integer.parseInt(x);
+		String x1 = (correct%1000);
 		
 	}
 
