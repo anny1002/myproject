@@ -11,4 +11,7 @@ public Meal(String number,String choose,String drink,int money){
 	this.drink=drink;
 	this.money=money;
 }
+public Meal(){
+
+}
 }

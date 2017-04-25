@@ -8,8 +8,16 @@ public class Student {
 	int math;
 	int chinese;
 	static int pass = 60;
-
 	// static屬於類別變數
+	static {
+		System.out.println("STATIC!!!!!!!");
+		// System.out.println(english);
+		// 會出錯，因為會先執行，所以身上還沒有屬性
+		System.out.println(pass);
+		// 一樣是先執行的，同是static
+	}
+
+	// static這個方法會先被執行
 	public Student(int english, int math, int chinese) {
 		this.english = english;
 		this.math = math;

@@ -4,10 +4,10 @@ public class MealTester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-Meal m1a=new Meal("1","薯條","紅茶",115);
-Meal m1b=new Meal("1","沙拉","可樂",115);
-Meal m2a=new Meal("2","薯條","牛奶",105);
-Meal m2b=new Meal("2","沙拉","雪碧",105);
+Meal m1a=new Meal("1.大麥克","薯條","紅茶",115);
+Meal m1b=new Meal("1.大麥克","沙拉","可樂",115);
+Meal m2a=new Meal("2.雙層牛肉吉士堡","薯條","牛奶",105);
+Meal m2b=new Meal("2.雙層牛肉吉士堡","沙拉","雪碧",105);
 Meal m3a=new Meal("3","薯條","可樂",125);
 Meal m6a=new Meal("6","薯條","玉米濃湯",95);
 Meal[] meals=new Meal[20];
