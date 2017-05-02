@@ -9,6 +9,9 @@ public class Student {
 	int chinese;
 	static int pass = 60;
 	// static屬於類別變數
+	public Student(){
+		
+	}
 	static {
 		System.out.println("STATIC!!!!!!!");
 		// System.out.println(english);
@@ -19,6 +22,7 @@ public class Student {
 
 	// static這個方法會先被執行
 	public Student(int english, int math, int chinese) {
+		super();
 		this.english = english;
 		this.math = math;
 		this.chinese = chinese;
@@ -28,7 +32,7 @@ public class Student {
 		System.out.println(getScore(english) + "\t" + getScore(math) + "\t" + getScore(chinese));
 	}
 
-	private String getScore(int score) {
+	protected String getScore(int score) {
 		if (score < pass) {
 			return String.valueOf(score) + "*";
 		} else {
