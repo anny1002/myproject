@@ -11,13 +11,18 @@ public class Car {
 	int status;
 	float milage;
 
+	public Car() {
+	}
+
 	public Car(String brand, int cc) {
 		this(brand, cc, "", "");
 		// 可以直接使用底下的，不需要再重複寫一次，可是這個一定要放在第一行
 	}
-	public Car(String brand,String type){
-		this(brand,0,"",type);
+
+	public Car(String brand, String type) {
+		this(brand, 0, "", type);
 	}
+
 	public Car(String brand, int cc, String name, String type) {
 		this.brand = brand;
 		this.cc = cc;

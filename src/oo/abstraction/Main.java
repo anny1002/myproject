@@ -2,7 +2,10 @@ package oo.abstraction;
 
 public class Main {
 
-	public static void main(String[] args) {//public表示其他的package也可以使用
+	public static void main(String[] args) {
+		//1.public表示其他的package也可以使用，但要先import
+		//2.不加的話只能用在同一個package，3.private只有自己能用
+		//
 		Car c = new Car("TOYOTA", 1800, "Altis", "sedan");
 		c.setMilage(25000);
 		float current = c.addMilage(80);// 後面要加和()裡的一樣屬性

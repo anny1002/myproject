@@ -34,6 +34,7 @@ public class CarTester {
 			System.out.println(cars[i].name);
 		}
 		System.out.println(i);
+		Truck truck1=new Truck("斯堪尼亞（SCANIA）", 1000, "G 系列卡車", "");
 	}
 	// n活在整個main方法裡，會問生存區域
 }
