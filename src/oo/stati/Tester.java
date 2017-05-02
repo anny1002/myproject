@@ -10,6 +10,7 @@ public class Tester {
 		stu2.print();
 		//本來的pass是60，加上static後只要改一個全都會變
 		GraduateStudent gstu =new GraduateStudent(68,85,89);
+		gstu.print();
 	}
 
 }
