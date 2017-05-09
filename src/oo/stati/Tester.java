@@ -24,6 +24,11 @@ public class Tester {
 			Student stu =list.get(i);
 			stu.print();
 		}
+//		Student stu  =new Student();
+//		System.out.println(stu);
+//		如果沒有用toString方法，會出現stu的位置--->oo.stati.Student@15db9742
+		Student stu  =new Student();
+		System.out.println(stu);
 	}
 
 }

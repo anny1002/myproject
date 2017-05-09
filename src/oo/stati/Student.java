@@ -8,10 +8,12 @@ public class Student {
 	int math;
 	int chinese;
 	static int pass = 60;
+
 	// static屬於類別變數
-	public Student(){
-		
+	public Student() {
+
 	}
+
 	static {
 		System.out.println("STATIC!!!!!!!");
 		// System.out.println(english);
@@ -39,5 +41,11 @@ public class Student {
 			return String.valueOf(score);
 		}
 
+	}
+
+	public String toString() {  //Object.ToString 方法 ()
+		return "eng:" + english + "\n" +
+	           "chinese:" + chinese + "\n" + 
+			   "math:" + math;
 	}
 }
