@@ -1,9 +1,13 @@
 package oo.shopping;
 
 public class GoldenCustomer extends Customer{
-	 public GoldenCustomer(int price,float discount,float returnMoney){
-		 this.price=price;
-		 this.discount=discount;
-		 this.returnMoney=returnMoney;
-	 }
+	public void pay(int price) {
+		total = price - (price * discount);
+		System.out.println("應付金額:"+total);
+	}
+
+	public void moneyback(int price) {
+		total = price * returnMoney;
+		System.out.println("回饋金:" + total);
+	}
 }

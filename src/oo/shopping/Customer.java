@@ -2,19 +2,21 @@ package oo.shopping;
 
 public class Customer {
 	int price;
+	float total;
 	float discount = 0.1f;
 	float returnMoney = 0.05f;
-	String level1 = "一般客戶";
-	String level2 = "銀級客戶";
-	String level3 = "金級客戶";
 
-	public Customer() {
-
+	public Customer(){}
+	public void pay(int price) {
+     total=price;
+     System.out.println("應付金額:"+total);
+	}
+	public void moneyback(int price) {
+	     total=price*0;
+	     System.out.println("回饋金:"+total);
+		}
+	public void print() {
+		System.out.println("1.一般客戶"+"應付金額:"+total+"回饋金:"+total);
 	}
 
-	public Customer(int price, float discount, float returnMoney) {
-		this.price = price;
-		this.discount = discount;
-		this.returnMoney = returnMoney;
-	}
 }
