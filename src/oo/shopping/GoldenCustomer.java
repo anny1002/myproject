@@ -4,8 +4,11 @@ public class GoldenCustomer extends Customer{
 	public GoldenCustomer(){
 		
 	}
-	public GoldenCustomer(int price){
+/*	public GoldenCustomer(int price){
 	     this.price =price;
+	}*/
+	public GoldenCustomer(int price){
+	     super(price);
 	}
 	public void pay(int price) {
 		total = price - (price * discount);
@@ -19,6 +22,6 @@ public class GoldenCustomer extends Customer{
 
 
 	public void print() {
-		System.out.println("會員:金級"+"\t"+"消費金額:"+price+"應付金額:" + (price*discount)+ "回饋金:"+(price*returnMoney));
+		System.out.println("會員:金級"+"\t"+"消費金額:"+price+"\t"+"應付金額:" + (price*discount)+"\t"+ "回饋金:"+(price*returnMoney));
 	}
 }

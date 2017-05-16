@@ -1,6 +1,6 @@
 package oo.shopping;
 
-import java.awt.List;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -16,10 +16,24 @@ public class Tester {
 		list.add(new GoldenCustomer(600));
 		list.add(new SilverCustomer(6400));
 		list.add(new GoldenCustomer(8000));
-		for(int j=0;j<list.size();j++){
-			Customer money=list.get(j);
+//		for(int j=0;j<list.size();j++){
+//			Customer money=list.get(j);
+		for(Customer money:list){
+			if (money instanceof SilverCustomer&&
+					!(money instanceof GoldenCustomer)){
+				System.out.print("*");
+				SilverCustomer silver=(SilverCustomer) money;
+			}
 			money.print();
 			}
+		String[] array = {"aa","bb","cc"};
+		for (String s : array){
+			System.out.println(s);
+		}
+		for(int i=0; i<array.length; i++){
+			String s = array[i];
+			System.out.println(s);
+		}
 		Customer c1 = new Customer();	
 	    SilverCustomer c2 = new SilverCustomer();
 	    GoldenCustomer c3 = new GoldenCustomer();
