@@ -8,7 +8,19 @@ public class Tester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	    Customer c1 = new Customer();	
+		ArrayList<Customer> list = new ArrayList<>();
+		list.add(new Customer(6000));
+		list.add(new SilverCustomer(6000));
+		list.add(new SilverCustomer(9000));
+		list.add(new Customer(10000));
+		list.add(new GoldenCustomer(600));
+		list.add(new SilverCustomer(6400));
+		list.add(new GoldenCustomer(8000));
+		for(int j=0;j<list.size();j++){
+			Customer money=list.get(j);
+			money.print();
+			}
+		Customer c1 = new Customer();	
 	    SilverCustomer c2 = new SilverCustomer();
 	    GoldenCustomer c3 = new GoldenCustomer();
 		Scanner scanner = new Scanner(System.in);
@@ -21,23 +33,18 @@ public class Tester {
 		int number=Integer.parseInt(b);
 		if (number==1){
 			c1.pay(p);
-			c1.moneyback(p);
-		};
-		if (number==2){
+			c1.moneyBack(p);
+		}else if (number==2){
 			c2.pay(p);
-			c2.moneyback(p);
-		};
-		if (number==3){
+			c2.moneyBack(p);
+		}else if (number==3){
 			c3.pay(p);
-			c3.moneyback(p);
-		};}
-		ArrayList<Customer> list = new ArrayList<>();
-		list.add(c1);
-		list.add(c2);
-		list.add(c3);
-		for(int j=0;j<list.size();j++){
-			Customer money=list.get(j);
-			}
+			c3.moneyBack(p);
+		}else{
+			System.out.println("輸入格式錯誤");
+			break;
+		};
+}
 	}
 
 }

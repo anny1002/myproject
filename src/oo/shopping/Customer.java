@@ -6,17 +6,23 @@ public class Customer {
 	float discount = 0.1f;
 	float returnMoney = 0.05f;
 
-	public Customer(){}
+	public Customer(){
+		
+	}
 	public void pay(int price) {
      total=price;
      System.out.println("應付金額:"+total);
 	}
-	public void moneyback(int price) {
+	public void moneyBack(int price) {
 	     total=price*0;
 	     System.out.println("回饋金:"+total);
 		}
+
+	public Customer(int price){
+	     this.price =price;
+	}
 	public void print() {
-		System.out.println("1.一般客戶"+"應付金額:"+total+"回饋金:"+total);
+		System.out.println("會員:一般"+"\t"+"消費金額:"+price+"應付金額:"+price+ "回饋金:"+(price*0));
 	}
 
 }
