@@ -5,10 +5,11 @@ public class MemberTester {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Member member = new Member();
-member.setAge(-5);
-System.out.println(member.getAge());
-//Phone Member
-PhoneMember member2=new PhoneMember();
+		member.setAge(-5);
+		System.out.println(member.getAge());
+		// Phone Member
+		PhoneMember member2 = new PhoneMember();
+		PhoneMember member3 = new PhoneMember();
 	}
 
 }
